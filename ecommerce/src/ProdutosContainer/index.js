@@ -3,11 +3,16 @@ import styled from 'styled-components';
 
 const ProdutosContainer = styled.div`
 width: 15vw;
-height: 47vh;
+height: 30vh;
+border: 1px solid black;
+display: flex;
+flex-direction: column;
+align-items: center;
 `;
 
 const FotoProduto = styled.img`
-width: 15vw;
+width: 200px;
+height: 200px;
 `
 
 
