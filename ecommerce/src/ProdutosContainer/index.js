@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const ProdutosContainer = styled.div`
-border: 2px solid green
 width: 15vw;
 height: 47vh;
 `;

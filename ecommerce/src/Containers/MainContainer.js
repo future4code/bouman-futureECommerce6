@@ -5,7 +5,6 @@ import HeaderContainer from '../HeaderContainer/index'
 import ImgContainer from '../Containers/ImgContainer'
 
 const FormContainer = styled.div`
-border: 0.5px solid purple;
 display: flex;
 flex-wrap: wrap;
 justify-content: flex-start;

@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const FiltrosCont = styled.div`
-border: 2px solid blue;
 display: flex;
 flex-direction: column;
 width: 10vw;

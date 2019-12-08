@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import Carrinho from '../CarrinhoContainer/index'
 
 const HeadContainer = styled.div`
-border: 1px solid pink;
 height: 20vh;
 width: 88vw;
 display:flex;

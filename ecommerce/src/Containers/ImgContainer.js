@@ -4,11 +4,11 @@ import ProdutosContainer from '../ProdutosContainer/index'
 import ImageProduto from '../img/camiseta.jpg'
 
 const ImgContainer = styled.div`
-border: 2px solid yellow;
 width: 98vw;
 display: flex;
 flex-wrap: wrap;
 justify-content: space-around;
+border: 1px solid grey;
 `;
 
 
