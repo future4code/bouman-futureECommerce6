@@ -19,7 +19,7 @@ function ImgContainerPai (props) {
     })
 
     const ComponentesFiltrados = props.posts.filter((eachElement) => {
-      if (eachElement.precoProduto > 60){
+      if (eachElement.precoProduto > props.vMin){
           return true
       }  else {
           return false

@@ -69,14 +69,19 @@ const ListaDeProdutos = [
 
 
 
-
-
 class MainContainer extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            valorMinimo : ""
+            valorMinDoinput: 0,
         }
+    
+    }
+
+
+    onChildChanged = (num) => {
+        this.setState ({valorMinDoinput: num})
+        console.log(this.state.valorMinDoinput)
     }
 
     render(){
@@ -86,11 +91,11 @@ class MainContainer extends React.Component{
     
         <FormContainer>
 
-            <FiltrosContainer/>
+            <FiltrosContainer callbackParent={(num) => this.onChildChanged(num)}/>
 
             <HeaderContainer/>
             
-            <ImgContainer posts={ListaDeProdutos}/>
+            <ImgContainer posts={ListaDeProdutos} vMin ={this.state.valorMinDoinput}/>
             
         </FormContainer>
     )
