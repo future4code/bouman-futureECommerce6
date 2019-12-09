@@ -27,7 +27,6 @@ height: 5vh;
 
 
 function PostProdutos (props) {
-    console.log(props.dadosPost)
     return(
         <ProdutosContainer>
             

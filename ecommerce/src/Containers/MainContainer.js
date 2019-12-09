@@ -66,13 +66,20 @@ const ListaDeProdutos = [
   
     }
   ]
-  
 
 
 
-function MainContainer (props) {
 
-    
+
+class MainContainer extends React.Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            valorMinimo : ""
+        }
+    }
+
+    render(){
     
     return( 
         
@@ -87,6 +94,8 @@ function MainContainer (props) {
             
         </FormContainer>
     )
+}
+
 }
 
 export default MainContainer;

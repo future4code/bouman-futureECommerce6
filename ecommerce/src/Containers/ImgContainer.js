@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import ProdutosContainer from '../ProdutosContainer/index'
-import ImageProduto1 from '../img/camiseta.jpg'
 
 const ImgContainer = styled.div`
 width: 98vw;
@@ -19,10 +18,21 @@ function ImgContainerPai (props) {
         return <ProdutosContainer dadosPost = {eachPost}/>
     })
 
+    const ComponentesFiltrados = props.posts.filter((eachElement) => {
+      if (eachElement.precoProduto > 60){
+          return true
+      }  else {
+          return false
+      }
+    })
+
     return (
     <ImgContainer>
         
-        {ComponentesDaListaDeProdutos}
+        {ComponentesFiltrados.map((eachPost) => {
+            return <ProdutosContainer dadosPost = {eachPost}/>
+        })
+        }
 
 
     </ImgContainer>
